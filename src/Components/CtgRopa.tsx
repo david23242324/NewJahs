@@ -36,27 +36,33 @@ export default function CtgRopa() {
   const visibles = productos.slice(startIndex, startIndex + 4);
 
   return (
-    <section className="w-full py-16">
-      <h2 className="text-4xl md:text-5xl font-cardo text-center text-[#7a6a3f] mb-12 tracking-widest">
+        <section className="w-full py-12 md:py-16 px-4">
+      <h2 className="text-3xl md:text-5xl font-cardo text-center text-[#7a6a3f] mb-10 md:mb-12 tracking-widest">
         CATALOGO
       </h2>
-      <div className="max-w-6xl mx-auto px-4 relative">
+
+      <div className="max-w-6xl mx-auto relative">
+
         <button
           onClick={prev}
-          className="absolute -left-10 top-1/2 -translate-y-1/2 bg-[#7a6a3f] text-white p-3 rounded-full shadow-md hover:scale-110 transition"
+          className="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 
+          bg-[#7a6a3f] text-white p-3 rounded-full shadow-md 
+          hover:scale-110 transition"
         >
           ←
         </button>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 justify-items-center">
+
           {visibles.map((p) => (
             <div
               key={p.id}
-              className="w-64 bg-white rounded-lg overflow-hidden
+              className="w-full max-w-[260px] bg-white rounded-lg overflow-hidden
               shadow-[-15px_15px_30px_rgba(0,0,0,0.25)]
               transition-transform duration-300 hover:-translate-y-2"
             >
-              <div className="w-full h-60 overflow-hidden">
+
+              <div className="w-full h-48 md:h-60 overflow-hidden">
                 <img
                   src={p.img}
                   alt={p.nombre}
@@ -64,8 +70,8 @@ export default function CtgRopa() {
                 />
               </div>
 
-              <div className="p-4">
-                <div className="mb-3">
+              <div className="p-3 md:p-4">
+                <div className="mb-2 md:mb-3">
                   <p className="text-sm font-cardo text-gray-800">
                     {p.nombre}
                   </p>
@@ -75,31 +81,34 @@ export default function CtgRopa() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <div className="bg-gray-100 px-3 py-1 rounded text-sm font-medium">
+                  <div className="bg-gray-100 px-2 md:px-3 py-1 rounded text-xs md:text-sm font-medium">
                     {p.precio}
                   </div>
+
                   <div className="flex gap-2">
                     <button className="bg-[#7a6a3f] p-2 rounded transition-all duration-300 hover:scale-110 active:scale-95">
                       <img src={Carrito} className="w-4 h-4" />
                     </button>
-                    <button className="bg-[#7a6a3f] p-2 rounded text-white transition-all duration-300 hover:scale-110 active:scale-95">
 
+                    <button className="bg-[#7a6a3f] p-2 rounded text-white transition-all duration-300 hover:scale-110 active:scale-95">
+                      +
                     </button>
                   </div>
-
                 </div>
               </div>
             </div>
           ))}
 
         </div>
-
         <button
           onClick={next}
-          className="absolute -right-10 top-1/2 -translate-y-1/2 bg-[#7a6a3f] text-white p-3 rounded-full shadow-md hover:scale-110 transition"
+          className="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 
+          bg-[#7a6a3f] text-white p-3 rounded-full shadow-md 
+          hover:scale-110 transition"
         >
           →
         </button>
+
       </div>
     </section>
   );
