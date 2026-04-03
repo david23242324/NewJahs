@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Vd from "../assets/Newjh.mp4";
+import Vd from "../assets/Newjh1.mp4";
 
 export default function VideoSection() {
   return (

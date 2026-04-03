@@ -2,14 +2,12 @@ import { useState } from "react";
 import Carrito from "../assets/CarritoN (1).png";
 
 import Rp1 from "../assets/Rv1.1.png";
-import Rp2 from "../assets/Rv1.2.png";
-import Rp3 from "../assets/Rv1.3.png";
 import Rp4 from "../assets/Rv1.4.png";
 import Rp5 from "../assets/Rv1.5.png";
 import Rp6 from "../assets/Rv1.6.png";
 import Rp7 from "../assets/Rv1.7.png";
 import Rp8 from "../assets/Rv1.8.png";
-import Rp9 from "../assets/Rv.1.9.png";
+
 
 export default function CtgRopa() {
 
