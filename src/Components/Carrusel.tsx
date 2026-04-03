@@ -154,16 +154,10 @@ export default function Carrusel() {
   {/* Capa suave para que combine con el panel */}
   <div className="absolute inset-0 bg-black/20" />
 </div>
-
-
 </div>
 
-
-
-
-
+{/* PANEL DERECHO */}
 </motion.div>
-
 <AnimatePresence>
   {selected && (
     <motion.div
@@ -176,11 +170,10 @@ export default function Carrusel() {
 <div className="relative w-full flex flex-col md:flex-row items-stretch">
 
   {/* COLUMNA IZQUIERDA: FONDO + PNG */}
-  <div className="w-full md:w-[50%] flex items-center justify-center 
-                  bg-white/10 backdrop-blur-xl 
-                  rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.25)] 
-                  p-10 relative">
-
+    <div className="w-full md:w-[50%] flex items-center justify-center 
+    bg-white/10 backdrop-blur-xl 
+    rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.25)] 
+    p-10 relative">
     <img
       src={selected.imagen}
       className="max-h-[360px] object-contain"
@@ -189,9 +182,9 @@ export default function Carrusel() {
 
   {/* COLUMNA DERECHA: PANEL DE CONTROLES (NO TOCADO) */}
   <div className="w-full md:w-[50%] ml-auto bg-[#f5f5f5]
-                  rounded-2xl p-6 md:p-10 
-                  shadow-[0_20px_60px_rgba(0,0,0,0.25)] 
-                  relative z-10">
+      rounded-2xl p-6 md:p-10 
+      shadow-[0_20px_60px_rgba(0,0,0,0.25)] 
+      relative z-10">
 
     {/* TÍTULO */}
     <h2 className="text-2xl font-cardo tracking-wide mb-4 absolute top-16 left-8">
@@ -225,9 +218,9 @@ export default function Carrusel() {
           <button
             key={t}
             className="w-10 h-10 flex items-center justify-center 
-                       rounded-full border border-gray-400 
-                       text-sm font-medium hover:bg-black hover:text-white 
-                       transition"
+            rounded-full border border-gray-400 
+            text-sm font-medium hover:bg-black hover:text-white 
+            transition"
           >
             {t}
           </button>
@@ -276,7 +269,6 @@ export default function Carrusel() {
 
   </div>
 </div>
-
 </motion.div>
   )}
 </AnimatePresence>

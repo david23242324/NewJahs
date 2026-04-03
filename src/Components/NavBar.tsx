@@ -13,7 +13,7 @@ export default function NavBar() {
         </div>
 
         <ul className="hidden md:flex items-center gap-6 lg:gap-10 font-cardo    tracking-wide text-white ml-28">
-          <li><a href="#" className="hover:text-yellow-500 transition">CATÁLOGO</a></li>
+          <li><a href="#" className="hover:text-yellow-500 transition">CATALOGO</a></li>
           <li><a href="#" className="hover:text-yellow-500 transition">HOMBRE</a></li>
           <li><a href="#" className="hover:text-yellow-500 transition">ACCESORIOS</a></li>
           <li><a href="#" className="hover:text-yellow-500 transition">BLOG</a></li>  

@@ -1,19 +1,22 @@
 import { useState } from "react";
 import Carrito from "../assets/CarritoN (1).png";
 
-import Rp1 from "../assets/Rp1.png";
-import Rp2 from "../assets/Rp2.png";
-import Rp3 from "../assets/Rp3.png";
-import Rp4 from "../assets/Rp4.png";
-import Rp5 from "../assets/Rp5.png";
-import Rp6 from "../assets/Rp6.png";
+import Rp1 from "../assets/Rv1.1.png";
+import Rp2 from "../assets/Rv1.2.png";
+import Rp3 from "../assets/Rv1.3.png";
+import Rp4 from "../assets/Rv1.4.png";
+import Rp5 from "../assets/Rv1.5.png";
+import Rp6 from "../assets/Rv1.6.png";
+import Rp7 from "../assets/Rv1.7.png";
+import Rp8 from "../assets/Rv1.8.png";
+import Rp9 from "../assets/Rv.1.9.png";
 
 export default function CtgRopa() {
 
   const productos = [
     { id: 1, nombre: "Saco Cyber", marca: "New Jahs", precio: "$ 60.000", img: Rp1 },
-    { id: 2, nombre: "Hoodie Dark", marca: "New Jahs", precio: "$ 75.000", img: Rp2 },
-    { id: 3, nombre: "Camisa Oversize", marca: "New Jahs", precio: "$ 50.000", img: Rp3 },
+    { id: 2, nombre: "Hoodie Dark", marca: "New Jahs", precio: "$ 75.000", img: Rp7 },
+    { id: 3, nombre: "Camisa Oversize", marca: "New Jahs", precio: "$ 50.000", img: Rp8 },
     { id: 4, nombre: "Pantalón Tech", marca: "New Jahs", precio: "$ 90.000", img: Rp4 },
     { id: 5, nombre: "Chaqueta Neo", marca: "New Jahs", precio: "$ 120.000", img: Rp5 },
     { id: 6, nombre: "Sweater Void", marca: "New Jahs", precio: "$ 65.000", img: Rp6 },
