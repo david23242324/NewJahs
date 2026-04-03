@@ -4,8 +4,6 @@ import Vd from "../assets/Newjh.mp4";
 export default function VideoSection() {
   return (
     <section className="relative w-full min-h-screen overflow-hidden font-cardo">
-
-      {/* VIDEO FONDO */}
       <video
         autoPlay
         loop
@@ -17,13 +15,8 @@ export default function VideoSection() {
         <source src={Vd} type="video/mp4" />
       </video>
 
-      {/* OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
-
-      {/* CONTENIDO */}
       <div className="relative z-20 w-full min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-12 lg:px-24 gap-8 md:gap-12 py-16">
-
-        {/* VIDEO PRINCIPAL */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -46,7 +39,6 @@ export default function VideoSection() {
           </video>
         </motion.div>
 
-        {/* TEXTO */}
         <motion.div
           initial={{ x: "100%", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -55,7 +47,7 @@ export default function VideoSection() {
             w-full md:w-1/2 max-w-[600px] md:max-w-[1200px]
             flex flex-col justify-center items-start
             p-6 md:p-10 lg:p-12
-            bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20
+            bg-white/10 backdrop-blur-xl  
             shadow-lg text-white
           "
         >
@@ -68,11 +60,11 @@ export default function VideoSection() {
           </p>
 
           <div className="flex flex-wrap gap-4 md:gap-6">
-            <button className="px-5 md:px-8 py-2 md:py-3 bg-white text-black rounded-lg font-semibold transition hover:bg-[#7a6a3f] hover:text-white text-sm md:text-base">
+            <button className="px-5 md:px-8 py-2 md:py-3 bg-white text-black font-semibold transition hover:bg-[#7a6a3f] hover:text-white text-sm md:text-base">
               INFO
             </button>
 
-            <button className="px-5 md:px-8 py-2 md:py-3 bg-white text-black rounded-lg font-semibold transition hover:bg-[#7a6a3f] hover:text-white text-sm md:text-base">
+            <button className="px-5 md:px-8 py-2 md:py-3 bg-white text-black font-semibold transition hover:bg-[#7a6a3f] hover:text-white text-sm md:text-base">
               FORMULARIO
             </button>
           </div>

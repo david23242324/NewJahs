@@ -9,14 +9,14 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between py-3">
 
         <div className="flex items-center">
-          <img src={Logo} alt="Logo" className="h-14 md:h-20 w-auto object-contain" />
+          <img src={Logo} alt="Logo" className="h-14 md:h-20 w-auto object-contain ml-2 cursor-pointer hover:scale-110 transition filter drop-shadow-md" />
         </div>
 
-        <ul className="hidden md:flex items-center gap-6 lg:gap-10 font-cardo text-sm md:text-lg tracking-wide text-white font-semibold">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-10 font-cardo    tracking-wide text-white ml-28">
           <li><a href="#" className="hover:text-yellow-500 transition">CATÁLOGO</a></li>
           <li><a href="#" className="hover:text-yellow-500 transition">HOMBRE</a></li>
           <li><a href="#" className="hover:text-yellow-500 transition">ACCESORIOS</a></li>
-          <li><a href="#" className="hover:text-yellow-500 transition">BLOG</a></li>
+          <li><a href="#" className="hover:text-yellow-500 transition">BLOG</a></li>  
         </ul>
 
         <div className="flex items-center gap-3 md:gap-6">

@@ -1,9 +1,9 @@
-import Rp1 from "../assets/Rp1.png";
-import Rp2 from "../assets/Rp2.png";
-import Rp3 from "../assets/Rp3.png";
-import Rp4 from "../assets/Rp4.png";
-import Rp5 from "../assets/Rp5.png";
-import Rp6 from "../assets/Rp6.png";
+import Rv1 from "../assets/Rv1.1.png"
+import Rp2 from "../assets/Rv1.2.png";
+import Rp3 from "../assets/Rv1.3.png";
+import Rp4 from "../assets/Rv1.4.png";
+import Rp5 from "../assets/Rv1.5.png";
+import Rp6 from "../assets/Rv1.6.png";
 
 export interface Producto {
   id: number;
@@ -17,7 +17,7 @@ export const productos: Producto[] = [
     id: 1,
     nombre: "CORE HOODIE",
     precio: 125,
-    imagen: Rp1,
+    imagen: Rv1,
   },
   {
     id: 2,
